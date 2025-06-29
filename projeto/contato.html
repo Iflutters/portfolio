@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Meu Portfólio</title>
+    <meta name="description" content="Entre em contato comigo." />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Contato</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Envie sua mensagem</h2>
+        <div class="form-container">
+          <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+
+          <!-- Mensagens continuam fora do <form> -->
+          <div id="mensagemErro">Preencha todos os campos corretamente.</div>
+          <div id="mensagemSucesso">Mensagem enviada com sucesso!</div>
+        </div>
+        <div id="mensagemErro" class="escondido">
+          Preencha todos os campos corretamente.
+        </div>
+        <div id="mensagemSucesso" class="escondido">
+          Mensagem enviada com sucesso!
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 - Meu Portfólio</p>
+    </footer>
+  </body>
+</html>

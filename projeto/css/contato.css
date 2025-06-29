@@ -1,0 +1,153 @@
+/* Cabeçalho */
+header {
+  background-color: #3b5998;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 2em;
+}
+
+/* Footer */
+footer {
+  background-color: #4a69bd;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main section {
+  display: block;
+  text-align: start; 
+}
+
+/* Contêiner */
+.form-container {
+  max-width: 500px;
+  margin: 1em auto;
+  padding: 0;
+}
+
+/* FORMULÁRIO CUSTOMIZADO */
+form {
+  max-width: 400px;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: white;
+  padding: 3em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Labels acima dos inputs */
+form label {
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  color: #4a69bd;
+}
+
+/* Inputs, textarea e botão */
+form input,
+form textarea,
+form button {
+  width: 100%;             
+  box-sizing: border-box;
+}
+
+/* Inputs e textarea estilos */
+form input,
+form textarea {
+  padding: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4a69bd;
+  outline: none;
+}
+
+/* Botão estilos */
+form button {
+  padding: 1em;
+  font-size: 1em;
+  background: #4a69bd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1.5em;
+}
+
+form button:hover {
+  background: #2f4981;
+}
+/* Mensagens pegam 100% do contêiner */
+#mensagemErro,
+#mensagemSucesso {
+  display: none;   
+  font-weight: bold;
+  padding: 0.8em;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2em;
+}
+
+#mensagemErro {
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+#mensagemSucesso {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/* Responsividade do menu */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

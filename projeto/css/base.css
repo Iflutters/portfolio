@@ -1,0 +1,26 @@
+/* Garantir altura total da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo com flexbox em coluna */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Main cresce para empurrar footer */
+main {
+  flex: 1;
+}
+
+/* Links padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}

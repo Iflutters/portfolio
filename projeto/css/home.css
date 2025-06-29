@@ -1,0 +1,117 @@
+/* Cabeçalho */
+header {
+  background-color: #3b5998;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #cfd8dc;
+}
+
+
+/* Hero section com imagem de fundo */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px); /* altura total menos cabeçalho e rodapé */
+  background: url("../images/imagem1.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/* Sobreposição escura */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Card central com Glassmorphism refinado */
+main section {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Mais transparente */
+  padding: 2.5em;
+  border-radius: 16px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Título e parágrafos */
+main section h2 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-top: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+main section p {
+  color: #f0f0f0;
+  font-size: 1.1em;
+  margin: 1em 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Botão estilizado */
+button {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  background-color: rgba(74, 105, 189, 0.9);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+button:hover {
+  background-color: rgba(47, 73, 129, 0.95);
+  transform: translateY(-2px);
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #3b5998;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}

@@ -8,6 +8,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -108,10 +113,17 @@ button:hover {
 }
 
 
-/* Rodapé */
+/* Footer */
 footer {
-  background-color: #3b5998;
+  background-color: #4a69bd;
   color: white;
   text-align: center;
-  padding: 1em;
+  padding: 0.3em 0.5em;
+  font-size: 0.6em;
+  line-height: 0.5;
+  word-wrap: break-word;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

@@ -8,6 +8,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -41,7 +46,9 @@ main {
   justify-content: center;
   min-height: calc(100vh - 120px);
   background: #f0f2f5;
-  padding: 2em;
+  padding: 2em 1em; /* margem horizontal menor p/ telas pequenas */
+  margin-top: 80px; /* altura menor porque seu header tem 60~70px */
+  box-sizing: border-box;
 }
 
 /* Card central */
@@ -82,4 +89,20 @@ main section .frase-efeito {
   font-style: italic;
   color: #555;
   font-size: 1.1em;
+}
+
+
+/* Footer */
+footer {
+  background-color: #4a69bd;
+  color: white;
+  text-align: center;
+  padding: 0.3em 0.5em;
+  font-size: 0.6em;
+  line-height: 0.5;
+  word-wrap: break-word;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
